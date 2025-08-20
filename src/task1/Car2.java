@@ -9,12 +9,12 @@ public class Car2 extends Car{
 
     @Override
     public String gas() {
-        return "Car2 moved!";
+        return getModel() + " moved!";
     }
 
     @Override
     public String brake() {
-        return "Car2 stopped!";
+        return getModel() + " stopped!";
     }
 
 }
