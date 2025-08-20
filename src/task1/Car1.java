@@ -8,11 +8,11 @@ public class Car1 extends Car{
 
     @Override
     public String gas() {
-        return "Car1! Let's go!";
+        return getModel() + "! Let's go!";
     }
 
     @Override
     public String brake() {
-        return "Car1, Stop!";
+        return getModel() + ", Stop!";
     }
 }
