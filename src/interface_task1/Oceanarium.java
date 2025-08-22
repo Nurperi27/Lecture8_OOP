@@ -5,23 +5,20 @@ import java.util.Arrays;
 public class Oceanarium {
     Swimmable[] animals;
     int count = 0; //счетчик
-
-    public Oceanarium(Swimmable[] animals, int count) {
-        this.animals = animals;
-        this.count = count;
+    public Oceanarium(){}
+    public Oceanarium(int length) {
+        animals = new Swimmable[length];
     }
-
     public void addAnimals(Swimmable animal){
         if(count < animals.length){
             animals[count++] = animal;
         }
+    }
+    public void getInfo(){
         for(Swimmable s : animals){
-            if(s != null){
-                s.swim();
-            }
+            System.out.println(s.swim());
         }
     }
-
     @Override
     public String toString() {
         return "Oceanarium{" +

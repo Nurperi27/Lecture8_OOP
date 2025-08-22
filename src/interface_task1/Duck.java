@@ -13,7 +13,7 @@ public class Duck implements Swimmable{
         return nameAnimal;
     }
     @Override
-    public void swim() {
-        System.out.println(nameAnimal + " relaxed swimming on the water");
+    public String swim() {
+        return nameAnimal + " relaxed swimming on the water";
     }
 }

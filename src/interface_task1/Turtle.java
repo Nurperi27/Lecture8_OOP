@@ -9,7 +9,7 @@ public class Turtle implements Swimmable{
         return nameAnimal;
     }
     @Override
-    public void swim() {
-        System.out.println(nameAnimal + " can sleep underwater for 4-7 hours");
+    public String swim() {
+        return nameAnimal + " can sleep underwater for 4-7 hours";
     }
 }

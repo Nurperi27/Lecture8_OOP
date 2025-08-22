@@ -13,7 +13,7 @@ public class Shark implements Swimmable {
         return nameAnimal;
     }
     @Override
-    public void swim() {
-        System.out.println(nameAnimal + " в среднем плавают со скоростью 8км/ч");
+    public String swim() {
+        return nameAnimal + " в среднем плавают со скоростью 8км/ч";
     }
 }
